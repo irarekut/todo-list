@@ -52,10 +52,7 @@ export default function todoReducer(state = initialState, action) {
           ...state.byIds,
           [id]: null,
         },
-        allIds: [
-          state.allIds.filter((current) => current !== id),
-          console.log("aaaaaaa"),
-        ],
+        allIds: [state.allIds.filter((current) => current !== id)],
       };
     }
 
